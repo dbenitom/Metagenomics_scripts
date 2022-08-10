@@ -1,7 +1,8 @@
 # Original script by Viola Krukenberg (https://orcid.org/0000-0001-8369-8114)
 # With modifications by David Benito Merino (https://orcid.org/my-orcid?orcid=0000-0002-1453-7330, https://github.com/dbenitom)
 
-# This script detects CxxCH (heme-binding) motifs in predicted open reading frames from microbial genomes or metagenomes and imports the results in an anvi'o contigs database.
+# This script detects CxxCH (heme-binding) motifs in predicted open reading frames from microbial genomes or metagenomes
+# and imports the results in an anvi'o contigs database (https://anvio.org/).
 
 # Path to anvio contigs.db:
 CONTIGS_DB=
