@@ -1,0 +1,9 @@
+# Get all the assemblies' tax IDs from a clade (NCBI taxonomy browser):
+gimme_taxa.py -o [OUTPUT_gimme_taxa.txt] -j [clade_tax_id]
+
+# Dry run of NCBI genome download to check the number of genomes to download (Check that the sed command does not add an extra comma at the end):
+ncbi-genome-download -s genbank -F fasta -t `sed -z 's/\n/,/g' [OUTPUT_gimme_taxa.txt]` --dry-run archaea
+
+# NCBI genome download:
+ncbi-genome-download -s genbank -F fasta -t `sed -z 's/\n/,/g' [OUTPUT_gimme_taxa.txt]` --flat-output --parallel 10 --metadata-table [METADATA] archaea
+ 
