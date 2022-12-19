@@ -1,0 +1,8 @@
+anvi-get-sequences-for-hmm-hits --external-genomes [GENOME_FILE] \
+                                -o [OUTPUT_ALIGNMENT] \
+                                --hmm-source Bacteria_71 \
+                                --return-best-hit \
+                                --get-aa-sequences \
+                                --partition-file [OUTPUT_PARTITION] \
+                                --concatenate \
+                                --align-with muscle
